@@ -18,6 +18,13 @@
         .bg-light-blue {
             background-color: #f8f9fa;
         }
+        .feature-title {
+            display: flex;
+            align-items: center;
+        }
+        .feature-title i {
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +38,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Trang chủ</a>
+                        <a class="nav-link active" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Tính năng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#system-requirements">Yêu cầu hệ thống</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology">Công nghệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#security">Bảo mật</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guide">Hướng dẫn sử dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#future">Cải tiến trong tương lai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Đăng nhập</a>
@@ -42,7 +70,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid bg-light-blue section">
+    <div class="container-fluid bg-light-blue section" id="home">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8 mx-auto text-center">
@@ -57,12 +85,12 @@
     </div>
 
     <!-- Features Section -->
-    <div class="container section">
+    <div class="container section" id="features">
         <div class="row mb-5">
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h3 class="card-title">
+                        <h3 class="card-title feature-title">
                             <i class="bi bi-person-circle feature-icon"></i>
                             Quản lý người dùng
                         </h3>
@@ -79,14 +107,12 @@
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h3 class="card-title">
+                        <h3 class="card-title feature-title">
                             <i class="bi bi-graph-up feature-icon"></i>
                             Quản lý KPIs
                         </h3>
                         <ul class="list-unstyled">
-                            <li class="mb-2">✓ Nhóm hành chính</li>
-                            <li class="mb-2">✓ Nhóm kỹ thuật</li>
-                            <li class="mb-2">✓ Nhóm chương trình/tác phẩm</li>
+                            <li class="mb-2">✓ Nhóm hành chính (Hành chính, Kỹ thuật, Chương trình/tác phẩm)</li>
                             <li class="mb-2">✓ Theo dõi và đánh giá thời gian thực</li>
                         </ul>
                     </div>
@@ -96,7 +122,7 @@
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h3 class="card-title">
+                        <h3 class="card-title feature-title">
                             <i class="bi bi-calculator feature-icon"></i>
                             Tính nhuận bút/thù lao
                         </h3>
@@ -113,7 +139,7 @@
 
         <!-- Khung nhuận bút Section -->
         <div class="row mt-5">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-12 mx-auto">
                 <div class="card border-0 shadow">
                     <div class="card-body">
                         <h3 class="card-title text-center mb-4">Khung nhuận bút (Barem)</h3>
@@ -144,18 +170,145 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Yêu cầu hệ thống Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Yêu cầu Hệ thống</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Yêu cầu phần cứng:</h5>
+                                <ul>
+                                    <li><strong>Máy chủ</strong>: CPU Intel Xeon hoặc tương đương, RAM 16GB trở lên, ổ cứng SSD 500GB.</li>
+                                    <li><strong>Máy trạm</strong>: CPU Intel i5 hoặc tương đương, RAM 8GB, kết nối Internet ổn định.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Yêu cầu phần mềm:</h5>
+                                <ul>
+                                    <li>Hệ điều hành Windows/Linux.</li>
+                                    <li>Cài đặt các thành phần cần thiết cho Backend và Frontend.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Công nghệ sử dụng Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Công nghệ Sử dụng</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Frontend:</h5>
+                                <ul>
+                                    <li><strong>ReactJS</strong>: Tạo giao diện người dùng.</li>
+                                    <li><strong>MUI</strong>: Thư viện UI.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Backend:</h5>
+                                <ul>
+                                    <li><strong>Node.js</strong>: Xử lý các tác vụ phía máy chủ.</li>
+                                    <li><strong>MySQL/PostgreSQL</strong>: Quản lý cơ sở dữ liệu.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5>Bảo mật:</h5>
+                                <ul>
+                                    <li><strong>SSL/TLS</strong>: Mã hóa dữ liệu truyền tải giữa máy chủ và người dùng.</li>
+                                    <li><strong>Xác thực và phân quyền</strong>: Bảo vệ hệ thống khỏi truy cập trái phép.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Dịch vụ phụ trợ:</h5>
+                                <ul>
+                                    <li><strong>Email Notifications</strong>: Gửi thông báo qua email cho người dùng về các sự kiện quan trọng.</li>
+                                    <li><strong>Logging</strong>: Ghi lại lịch sử hoạt động của người dùng và hệ thống.</li>
+                                    <li><strong>Backup</strong>: Tự động sao lưu dữ liệu định kỳ.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bảo mật Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Bảo mật</h3>
+                        <ul>
+                            <li><strong>Xác thực người dùng</strong>: Sử dụng các phương thức xác thực mạnh mẽ như mật khẩu phức tạp, xác thực hai yếu tố (2FA).</li>
+                            <li><strong>Phân quyền truy cập</strong>: Giới hạn quyền truy cập dựa trên vai trò của người dùng.</li>
+                            <li><strong>Mã hóa dữ liệu</strong>: Mã hóa các thông tin nhạy cảm như mật khẩu và thông tin tài khoản ngân hàng.</li>
+                            <li><strong>Bảo vệ chống các cuộc tấn công</strong>: Áp dụng các biện pháp bảo mật để ngăn chặn SQL Injection, XSS, CSRF và các loại tấn công khác.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hướng dẫn sử dụng Section -->
+       <!--  <div class="row mt-5" id="guide">
+            <div class="col-md-12">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Hướng dẫn Sử dụng</h3>
+                        <h5>1. Đăng nhập</h5>
+                        <p>Người dùng nhập tên đăng nhập và mật khẩu để truy cập hệ thống. Các quyền truy cập sẽ được xác định dựa trên vai trò của người dùng.</p>
+                        
+                        <h5>2. Quản lý thông tin cá nhân</h5>
+                        <p>Người dùng có thể cập nhật thông tin cá nhân của mình bao gồm thông tin cơ bản, thông tin công việc và thông tin tài khoản ngân hàng.</p>
+                        
+                        <h5>3. Quản lý KPIs</h5>
+                        <p>Quản lý có thể xây dựng và cập nhật KPIs cho nhân viên trong phòng ban. Lãnh đạo có thể đánh giá và chấm điểm KPIs của từng nhân viên.</p>
+                        
+                        <h5>4. Tính toán nhuận bút và thù lao</h5>
+                        <p>Hệ thống tự động tính toán nhuận bút và thù lao dựa trên các KPIs đã đánh giá và hệ số được cấu hình trong khung nhuận bút.</p>
+                        
+                        <h5>5. Xem và xuất báo cáo</h5>
+                        <p>Người dùng có thể xem các báo cáo về nhuận bút, thù lao và hiệu suất làm việc của mình. Các báo cáo có thể được xuất dưới dạng PDF hoặc Excel để dễ dàng lưu trữ và chia sẻ.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Các cải tiến trong tương lai Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Các Cải tiến Trong Tương Lai</h3>
+                        <ul>
+                            <li><strong>Tích hợp hệ thống thông báo:</strong> Đẩy thông báo trực tiếp đến người dùng qua SMS hoặc ứng dụng di động.</li>
+                            <li><strong>Phân tích dữ liệu nâng cao:</strong> Sử dụng các công cụ BI (Business Intelligence) để cung cấp các báo cáo và biểu đồ phân tích sâu hơn.</li>
+                            <li><strong>Giao diện người dùng nâng cấp:</strong> Cải thiện giao diện để trải nghiệm người dùng thân thiện hơn.</li>
+                            <li><strong>Hỗ trợ đa ngôn ngữ:</strong> Thêm các ngôn ngữ khác để hỗ trợ người dùng đa dạng.</li>
+                            <li><strong>Tích hợp API bên ngoài:</strong> Kết nối với các hệ thống quản lý khác hoặc dịch vụ tài chính để tự động hóa quy trình.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Đài Phát thanh và Truyền hình Hậu Giang</h5>
-                    <p>Hệ thống quản lý nhuận bút chuyên nghiệp</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p>© 2024 Bản quyền thuộc về PTTH Hậu Giang</p>
+            <div class="row text-center">
+                <div class="col-md-12 ">
+                    <p>© 2024 Bản quyền thuộc về <strong>Đài PTTH Hậu Giang</strong></p>
                 </div>
             </div>
         </div>
